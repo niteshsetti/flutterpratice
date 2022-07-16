@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:first/display.dart';
 import 'package:first/screens/first.dart';
 import 'package:first/screens/second.dart';
 import 'package:first/screens/third.dart';
@@ -23,6 +22,10 @@ class MyApp extends StatelessWidget {
               title: Text('Flutter Test'),
               backgroundColor: Colors.green,
               centerTitle: true,
+              elevation: 5,
+              shadowColor: Colors.green,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0)),
               bottom: TabBar(
                 tabs: [
                   Tab(
@@ -39,6 +42,8 @@ class MyApp extends StatelessWidget {
                   )
                 ],
                 indicatorColor: Colors.white,
+                indicatorWeight: 1.0,
+                indicatorSize: TabBarIndicatorSize.tab,
               ),
             ),
             body: TabBarView(

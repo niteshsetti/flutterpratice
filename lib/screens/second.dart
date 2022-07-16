@@ -24,7 +24,7 @@ class Second extends StatelessWidget {
           );
         },
       ),
-      floatingActionButton:dis.button(Icon(Icons.edit),"Edit",Colors.purple),
+      floatingActionButton: dis.button(Icon(Icons.edit), "Edit", Colors.purple),
     );
   }
 }

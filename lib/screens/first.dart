@@ -8,22 +8,21 @@ class First extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            dis.display("Madhu vasanth", "Computer Science Student"),
-            dis.display("Nitesh", "Computer Science Student"),
-            dis.display("Kalyan", "Computer Science Student"),
-            dis.display("Madhu vasanth", "Computer Science Student"),
-            dis.display("Nitesh", "Computer Science Student"),
-            dis.display("Kalyan", "Computer Science Student"),
-            dis.display("Madhu vasanth", "Computer Science Student"),
-            dis.display("Nitesh", "Computer Science Student"),
-            dis.display("Kalyan", "Computer Science Student"),
-          ],
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              dis.display("Madhu vasanth", "Computer Science Student",context),
+              dis.display("Nitesh", "Computer Science Student",context),
+              dis.display("Kalyan", "Computer Science Student",context),
+              dis.display("Madhu vasanth", "Computer Science Student",context),
+              dis.display("Nitesh", "Computer Science Student",context),
+              dis.display("Kalyan", "Computer Science Student",context),
+              dis.display("Madhu vasanth", "Computer Science Student",context),
+              dis.display("Nitesh", "Computer Science Student",context),
+              dis.display("Kalyan", "Computer Science Student",context),
+            ],
+          ),
         ),
-      ),
-      floatingActionButton: dis.button(Icon(Icons.add),"Add",Colors.green)
-    );
+        floatingActionButton: dis.button(Icon(Icons.add), "Add", Colors.green));
   }
 }
