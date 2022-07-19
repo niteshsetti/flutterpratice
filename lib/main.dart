@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:first/screens/adddog.dart';
 import 'package:first/screens/first.dart';
 import 'package:first/screens/second.dart';
 import 'package:first/screens/third.dart';
@@ -16,10 +17,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Pratice',
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
-        length: 3,
+        length: 2,
         child: Scaffold(
             appBar: AppBar(
-              title: Text('Flutter Test'),
+              title: Text('Flutter Sqlflite'),
               backgroundColor: Colors.green,
               centerTitle: true,
               elevation: 5,
@@ -27,19 +28,18 @@ class MyApp extends StatelessWidget {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
               bottom: TabBar(
+                isScrollable: true,
                 tabs: [
+                  
                   Tab(
-                    text: 'Add',
+                    text: 'Add Dog',
                     icon: Icon(Icons.add),
                   ),
                   Tab(
-                    text: 'Update',
-                    icon: Icon(Icons.update),
+                    text: 'Fetch Dogs',
+                    icon: Icon(Icons.details),
                   ),
-                  Tab(
-                    text: 'delete',
-                    icon: Icon(Icons.delete),
-                  )
+                  
                 ],
                 indicatorColor: Colors.white,
                 indicatorWeight: 1.0,
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             body: TabBarView(
-              children: [First(), Second(), Third()],
+              children: [AddDog(), Third()],
             )),
       ),
     );
