@@ -23,6 +23,7 @@ class _ThirdState extends State<Third> {
   @override
   void initState() {
     super.initState();
+
     databaseConnection.fetch_dog().then((value) {
       setState(() {
         dogs = value;

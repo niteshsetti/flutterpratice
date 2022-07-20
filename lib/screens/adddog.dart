@@ -174,7 +174,6 @@ class _AddDogState extends State<AddDog> {
                         await InternetConnectionChecker().hasConnection;
                     setState(() {
                       Alert = false;
-                      _check_internet_connectivity(context);
 
                       if (!isDeviceConnected) {
                         showDialogBox();
